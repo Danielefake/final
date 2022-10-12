@@ -1,0 +1,872 @@
+font-family: 'termina', sans-serif;
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {  background-repeat: no-repeat;
+    }
+
+  .header {
+  position: fixed;
+    display: flex;
+    align-items: center;
+    font-family: termina, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: space-between;
+    padding: 1em;
+background-color: rgba(255, 255, 255, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+
+  }
+
+
+  a:link,
+  a:visited {
+    color: #5D6063;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+  .menu {
+    margin-top: 15px;
+  }
+
+  .menu > li {
+  display: inline-flex;
+    margin-right: 50px;
+    align-self: center;
+
+
+  }
+
+  .menu > li:last-of-type {
+    margin-right: 0;
+  }
+
+  .features-menu {
+    display: flex;
+    flex-direction: column;
+    background: red;
+    border-radius: 5px;
+    padding-top: 60px;
+  }
+
+  .features-menu li {
+    list-style: none;
+    border-bottom: 1px solid #E81346;
+
+    padding: 0 40px 10px 20px;
+    margin: 10px;
+  }
+
+  .features-menu li:last-of-type {
+    border-bottom: none;
+  }
+  .features-menu {
+    display: flex;
+    flex-direction: column;
+    background: red;
+    border-radius: 5px;
+    padding-top: 60px;
+
+    position: absolute;      /* Add these */
+    top: -25px;
+    left: -30px;
+  }.dropdown > span {
+    z-index: 2;
+    position: relative;  /* This is important! */
+    cursor: pointer;
+  }
+
+  .features-menu {
+    /* ... */
+    z-index: 1;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown:hover .features-menu {    /* This used to be `.features-menu` */
+    display: flex;                    /* Leave everything else alone */
+    flex-direction: column;
+    background: white;
+box-shadow: 0 0 10px rgba(232, 19, 70, 0.2), 10px 15px 20px rgba(137, 48, 131, 0.2), -10px 15px 30px rgba(232, 19, 70, 0.1), -10px -15px 30px rgba(232, 19, 70, 0.1)
+, 10px -15px 30px rgba(137, 48, 131, 0.2);
+    /* ... */
+  }
+
+  .features-menu {                    /* Add this as a new rule */
+    display: none;
+  }
+
+
+
+  .menu {
+
+  }
+.title {
+}
+.contacts {
+
+}
+.intro {
+  margin: 0 auto;
+  width:50%;
+  position: relative;
+  height: 650px;
+}
+.profile-circle {
+  position: absolute;
+  left: -180px;
+}
+
+.profile-img {
+  position: absolute;
+  text-align: center;
+left: 25px;
+top: 24px;
+align-items: center;
+}
+
+
+h1 {
+  font-family: termina, sans-serif;
+  font-weight: 300;
+  font-style: light;
+  position: relative;
+  font-size: 2.5em;
+  line-height: 200%;
+  letter-spacing: 0.05em;
+  color: #3D1335;
+  padding-top: 180px;
+}
+
+.intro-cta {
+  padding-top: 1em;
+}
+  .button {
+      background: linear-gradient(0deg, #E81346 0%, #8C3181 69%);
+      color: white;
+      border: 0px;
+      padding: 1em;
+      font-family: termina, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 0.05em;
+
+    }
+
+    .button:hover {
+       background: linear-gradient(0deg, #E81346 0%, #E81346 0%);
+        color: white;
+        border: 0px;
+        padding: 1em;
+        font-family: termina, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 0.05em;
+        box-shadow: 0 0 5px rgba(232, 19, 70, 0.2), 5px 10px 15px rgba(137, 48, 131, 0.2), -5px 10px 25px rgba(232, 19, 70, 0.1), -10px -15px 30px rgba(232, 19, 70, 0.1)
+        , 5px -10px 25px rgba(137, 48, 131, 0.2);
+
+
+      }
+
+    .secondary-button {
+
+        color: #3D1335;
+        border: 0px;
+        padding: 1em;
+        margin-left: 20px;
+        font-family: termina, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        letter-spacing: 0.05em;
+        width: 130px;
+        background-color: rgba(239, 239, 239, 1)
+
+      }
+.container-button {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -70px;
+  display: flex;
+align-items: center;
+}
+      .secondary-button:hover {
+
+          color: #3D1335;
+          background-color: #E4EFEF;
+          font-weight: 600;
+            text-decoration: underline;
+            box-shadow: 0 0 5px rgba(232, 19, 70, 0.2), 5px 10px 15px rgba(137, 48, 131, 0.2), -5px 10px 25px rgba(232, 19, 70, 0.1), -10px -15px 30px rgba(232, 19, 70, 0.1)
+            , 5px -10px 25px rgba(137, 48, 131, 0.2);
+        }
+
+
+        .secondary-button2 {
+
+            color: #3D1335;
+            border: 0px;
+            padding: 1em;
+
+            font-family: termina, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            letter-spacing: 0.05em;
+            margin-top: 10%;
+
+            text-align: center;
+            float:left;
+             display:flex;
+             align-items:center;
+             justify-content:center;
+             color: rgba(61, 19, 53, 1);
+             letter-spacing: 0.07em;
+
+             color: #3D1335;
+             border: 0px;
+             padding: 1em;
+
+             font-family: termina, sans-serif;
+             font-weight: 300;
+             font-style: normal;
+             letter-spacing: 0.05em;
+
+
+            background-color: rgba(239, 239, 239, 1);
+
+                display: flex;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 40px;
+
+          }
+
+          .secondary-button2:hover {
+
+              color: #3D1335;
+              background-color: #E4EFEF;
+              font-weight: 600;
+              box-shadow: 0 0 5px rgba(232, 19, 70, 0.2), 5px 10px 15px rgba(137, 48, 131, 0.2), -5px 10px 25px rgba(232, 19, 70, 0.1), -10px -15px 30px rgba(232, 19, 70, 0.1)
+              , 5px -10px 25px rgba(137, 48, 131, 0.2);
+
+            }
+p {
+  font-family: termina, sans-serif;
+  font-size: 1em;
+font-weight: 400;
+font-style: light;}
+}
+
+.links {
+  border: 1px solid #fff;  /* For debugging */
+}
+
+
+
+.prova {background-color: red;
+  font-family: termina, sans-serif;
+font-weight: 800;
+font-style: normal;}
+
+
+
+.works-section {
+
+display: flex;
+align-items: center;
+ justify-content: center;
+ padding-bottom: 35%;
+
+
+
+}
+
+.works-left {
+  width: 50%;
+  height: 340px;
+
+
+}
+
+.works-right {
+  width: 50%;
+  height: 340px;
+    padding-top: 130px;
+    color: #3D1335;
+}
+.work1 {
+
+
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+
+}
+.work2 {
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+}
+.work3 {
+
+
+    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+
+
+}
+.work4 {
+
+  height: 100%;
+display: flex;
+align-items: center;
+  justify-content: left;
+
+}
+.work-text {
+  text-align: left;
+  width: 35%;
+  color: #3D1335;
+
+}
+
+.work-image {
+  width: 210px;
+  height: 100%;
+  repeat: none;
+ /*if your want to padding */
+}
+
+
+
+.type{
+  font-family: 'termina';
+font-style: normal;
+font-weight: 300;
+font-size: 1em;
+}
+.client {
+  font-family: 'termina';
+font-style: normal;
+font-weight: 600;
+font-size: 1.6em;
+      letter-spacing: 0.05em;
+}
+.hashtags-left {
+  font-family: 'termina';
+font-style: normal;
+font-weight: 200;
+font-size: 1em;
+margin-right: 10%;
+display: none;
+}
+
+.hashtags {
+  font-family: 'termina';
+font-style: normal;
+font-weight: 200;
+font-size: 1em;
+margin-left: 10%;
+display: none;
+}
+.line {
+  width: 100%;
+  height: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  background: linear-gradient(90deg, #E81346 -9.68%, #8C3181 74.62%);
+}
+.text-right {
+  text-align: right;
+}
+
+.clients-section {
+  margin: 2em;
+  margin: 0 auto;
+  text-align: center;
+  width:100%;
+  position: relative;
+    padding-bottom: 1em;
+    background-color: rgba(228, 239, 239, 0.2);
+    padding-top: 1em;
+    color: #3D1335;
+}
+h2 {
+font-family: 'termina';
+font-style: normal;
+font-weight: 600;
+font-size: 1.5em;
+      letter-spacing: 0.05em;
+      color: #3D1335;
+
+}
+.client-container {
+   display: flex;
+justify-content: space-between;
+padding-right: 2em;
+padding-left: 2em;
+height: 10%;
+    background-color: rgba(228, 239, 239, 0.2);
+
+}
+
+
+
+   .client-container img {
+
+     width: 15%;
+     height: 15%;
+     align-self: center;
+
+     padding-bottom: 4em;}
+
+     #logo {
+       width: 5%;
+     }
+
+.contact-section {
+  margin: 0 auto;
+
+  text-align: center;
+  width:100%;
+  padding-top: 1em;
+  position: relative;
+  background-color: rgba(228, 239, 239, 0.2);
+      padding-bottom: 2%;
+      margin-bottom: 2%;
+
+}
+
+.next-chapter {
+text-align: center;
+}
+h3 {
+  font-family: 'termina';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.5em;
+        letter-spacing: 0.05em;
+
+}
+.alternatives{
+  margin: 0 auto;
+text-align: center;
+padding-top: 2em;
+
+}
+.description {
+  font-family: 'termina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+        letter-spacing: 0.05em;
+        display: flex;
+      justify-content:center;
+
+}
+
+.projects-box {
+  font-family: 'termina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+        letter-spacing: 0.05em;
+        display: flex;
+      justify-content:center;
+
+         align-self: center;
+         align-items: center;
+         justify-content: center;
+
+         background-image: url('assets/images/spiral.png');
+         background-repeat: no-repeat;
+         width: 405px;
+          height: 250px;
+margin: 0 auto;
+
+}
+
+.extra-service {
+  font-family: 'termina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+        letter-spacing: 0.05em;
+        display: flex;
+      justify-content:center;
+
+         align-self: center;
+         align-items: center;
+         justify-content: center;
+
+         background-image: url('assets/images/spiral.png');
+         background-repeat: no-repeat;
+         width: 810px;
+          height: 500px;
+margin: 0 auto;
+margin-top: 8em;
+padding-bottom: 10%;
+
+}
+
+.photography {
+  background-color: rgba(228, 239, 239, 0.7)
+;
+  width: 250px;
+  height: 250px;
+  top: 50%;
+  float:left;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family: 'termina';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5em;
+        letter-spacing: 0.05em;
+        color: #3D1335;
+
+}
+.photography:hover {
+  background-color: rgba(20, 20, 40, 0.7);
+  color: rgba(228, 239, 239, 0.7);
+  box-shadow: 0 0 5px rgba(232, 19, 70, 0.2), 5px 10px 15px rgba(137, 48, 131, 0.2), -5px 10px 25px rgba(232, 19, 70, 0.1), -10px -15px 30px rgba(232, 19, 70, 0.1)
+  , 5px -10px 25px rgba(137, 48, 131, 0.2);
+}
+
+.memoji img {
+  width: 10em;
+  margin: 0 auto;
+}
+.quote {
+  background-color: rgba(228, 239, 239, 0.7)
+;
+  width: 100%;
+  height: 300px;
+  top: 50%;
+  float:left;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family: 'termina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5em;
+        letter-spacing: 0.05em;
+
+}
+
+.typeexperiments {
+
+  width: 155px;
+  height: 250px;
+
+
+}
+
+.service-cta {
+
+  width: 320px;
+  height: 500px;
+  text-align: center;
+      margin: 0 auto;
+
+}
+.description {
+  padding-bottom: 1em;
+}
+.typefaces {
+background: linear-gradient(0deg, rgba(232, 19, 70, 0.9), rgba(140, 49, 129, 0.9));
+color: white;
+    height: 155px;
+      width: 155px;
+      float:left;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+  letter-spacing: 0.07em;
+
+}
+
+.typefaces:hover {
+  background: rgba(20, 20, 40, 0.7);
+  color: rgba(228, 239, 239, 0.7);
+  box-shadow: 0 0 5px rgba(232, 19, 70, 0.2), 5px 10px 15px rgba(137, 48, 131, 0.2), -5px 10px 25px rgba(232, 19, 70, 0.1), -10px -15px 30px rgba(232, 19, 70, 0.1)
+  , 5px -10px 25px rgba(137, 48, 131, 0.2);
+}
+.experiments:hover {
+  background: rgba(20, 20, 40, 0.7);
+  color: rgba(228, 239, 239, 0.7);
+  box-shadow: 0 0 5px rgba(232, 19, 70, 0.2), 5px 10px 15px rgba(137, 48, 131, 0.2), -5px 10px 25px rgba(232, 19, 70, 0.1), -10px -15px 30px rgba(232, 19, 70, 0.1)
+  , 5px -10px 25px rgba(137, 48, 131, 0.2);
+}
+.service {
+background: linear-gradient(0deg, rgba(232, 19, 70, 0.9), rgba(140, 49, 129, 0.9));
+color: white;
+    height: 310px;
+      width: 319px;
+
+ display:flex;
+ align-items:center;
+ justify-content:center;
+  letter-spacing: 0.07em;
+  margin-top: -70px
+
+}
+.service-text {
+  width: 80%;
+  font-family: 'termina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+        letter-spacing: 0.05em;
+
+
+}
+.bold
+{
+    font-weight: 600;
+}
+.experiments {
+
+height: 95px;
+width: 155px;
+float:left;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ color: rgba(61, 19, 53, 1);
+ letter-spacing: 0.07em;
+ background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.cta-consultancy {
+
+height: 190px;
+width: 310px;
+float:left;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ color: rgba(61, 19, 53, 1);
+ letter-spacing: 0.07em;
+ background-color: rgba(240, 240, 240, 0.);
+ color: #3D1335;
+ border: 0px;
+ padding: 1em;
+ margin-left: 20px;
+ font-family: termina, sans-serif;
+ font-weight: 300;
+ font-style: normal;
+ letter-spacing: 0.05em;
+ width: 130px;
+
+}
+.networking {
+  display: flex;
+justify-content:center;
+padding-top: 5%;
+padding-bottom: 5%;}
+
+.find-me {
+  font-family: 'termina';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+        letter-spacing: 0.05em;
+
+}
+form {
+  width: 80%;
+  text-align: center;
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+  width:80%;
+  padding-top: 1em;
+  position: relative;
+
+}
+label {
+    font-family: termina, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: termina, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 0.05em;
+
+}
+
+.find-me img:hover{
+  opacity: 60%;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+
+  padding: 20px;
+}
+
+.icons
+ {
+  margin-bottom: -15px;
+  margin-left: 1em;
+ }
+.work1:hover .work-image {
+
+  opacity: 0.5;
+color: linear-gradient(0deg, #E81346 0%, #8C3181 69%);
+  filter: grayscale(100%);
+}
+.work1:hover .hashtags-left {
+display: block;
+
+}
+
+.work2:hover .work-image {
+
+  opacity: 0.5;
+color: linear-gradient(0deg, #E81346 0%, #8C3181 69%);
+  filter: grayscale(100%);
+}
+.work2:hover .hashtags {
+display: block;
+
+}
+.work3:hover .work-image {
+
+  opacity: 0.5;
+color: linear-gradient(0deg, #E81346 0%, #8C3181 69%);
+  filter: grayscale(100%);
+}
+.work3:hover .hashtags-left {
+display: block;
+
+}
+.work4:hover .work-image {
+
+  opacity: 0.5;
+color: linear-gradient(0deg, #E81346 0%, #8C3181 69%);
+  filter: grayscale(100%);
+}
+.work4:hover .hashtags {
+display: block;
+
+}
+
+
+.outside-image {
+  animation: rotate-btn 7.5s linear 3;
+    -webkit-animation: rotate-btn 7.5s linear 3;
+  }
+
+
+  @media screen and (max-width: 480px) {
+    body {
+    min-width: fit-content;}
+
+    h1 {
+    font-size: 2em;
+    line-height: 120%;
+    padding-top: 220px;
+    }
+
+    .service-cta {
+        width: 150%;
+      }
+      .intro {
+            text-align: center;
+      }
+      .work-text {
+          text-align: left;
+          width: 60%;
+          color: #3D1335;
+      }
+      .work-image {
+        width: 160px;
+      }
+      .works-right .work-text {
+        text-align: right;
+      }
+      .works-section {
+
+          padding-bottom: 40%;
+      }
+      .profile-circle {
+          position: absolute;
+              margin-left: 70%;
+      }
+      .service {
+            width: 100%;
+      }
+  }
+
+
+
+
+  @keyframes rotate-btn {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+}
